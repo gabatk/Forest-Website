@@ -1,0 +1,23 @@
+{
+  "name": "forest-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabatk/Forest-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabatk/Forest-Website/issues"
+  },
+  "homepage": "https://github.com/gabatk/Forest-Website#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
