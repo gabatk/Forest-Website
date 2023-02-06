@@ -15,21 +15,10 @@ body {
 	color: rgb(56, 56, 56);
 }
 
-.nav-desktop {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-
+.nav {
 	&__text {
+		padding: 20px;
 		font-size: 3rem;
-	}
-
-	&__box {
-		width: 50%;
-	}
-
-	&__links {
-		display: flex;
 	}
 
 	&__link {
@@ -41,5 +30,24 @@ body {
 			background-color: black;
 			color: #fff;
 		}
+	}
+
+	&-desktop {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		&__box {
+			width: 50%;
+		}
+
+		&__links {
+			display: flex;
+		}
+	}
+
+	&-mobile {
+		width: 60%;
+		z-index: 2000;
 	}
 }
