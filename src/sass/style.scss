@@ -8,7 +8,38 @@
 
 html {
 	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	color: rgb(56, 56, 56);
 }
 
 .nav-desktop {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	&__text {
+		font-size: 3rem;
+	}
+
+	&__box {
+		width: 50%;
+	}
+
+	&__links {
+		display: flex;
+	}
+
+	&__link {
+		padding: 20px;
+		font-size: 1.4rem;
+		list-style-type: none;
+
+		&:hover {
+			background-color: black;
+			color: #fff;
+		}
+	}
 }
