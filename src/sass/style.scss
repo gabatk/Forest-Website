@@ -47,7 +47,42 @@ body {
 	}
 
 	&-mobile {
+		position: absolute;
 		width: 60%;
+		background-color: #fff;
 		z-index: 2000;
+	}
+}
+
+.hero {
+	&-bg {
+		position: relative;
+		height: 20em;
+		background-image: url('../../dist/img/jungle_640.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__shadow {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(26, 25, 25, 0.5);
+	}
+
+	&__text {
+		position: absolute;
+		color: #fff;
+		top: 50%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+
+		&--small {
+			font-size: 1.6rem;
+		}
+
+		&--big {
+			font-size: 2rem;
+		}
 	}
 }
