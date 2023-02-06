@@ -15,6 +15,20 @@ body {
 	color: rgb(56, 56, 56);
 }
 
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.title {
+	padding: 20px;
+	text-align: center;
+	font-size: 2.4rem;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
 .nav {
 	&__text {
 		padding: 20px;
@@ -83,6 +97,30 @@ body {
 
 		&--big {
 			font-size: 2rem;
+		}
+	}
+}
+
+.about {
+	margin: 4em 2em;
+
+	&__img {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	&__box {
+		padding: 20px;
+
+		&-title {
+			padding: 10px 0;
+			color: #000;
+			font-size: 1.6rem;
+		}
+
+		&-text {
+			font-size: 1.2rem;
+			line-height: 150%;
 		}
 	}
 }
