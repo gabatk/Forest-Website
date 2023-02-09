@@ -47,7 +47,7 @@ body {
 	}
 
 	&-desktop {
-		display: flex;
+		display: none;
 		justify-content: space-around;
 		align-items: center;
 
@@ -71,7 +71,7 @@ body {
 .hero {
 	&-bg {
 		position: relative;
-		height: 20em;
+		height: 22em;
 		background-image: url('../../dist/img/jungle_640.jpg');
 		background-size: cover;
 		background-position: center;
@@ -81,7 +81,7 @@ body {
 		position: absolute;
 		height: 100%;
 		width: 100%;
-		background-color: rgba(26, 25, 25, 0.5);
+		background-color: rgba(20, 20, 20, 0.5);
 	}
 
 	&__text {
@@ -115,11 +115,11 @@ body {
 		&-title {
 			padding: 10px 0;
 			color: #000;
-			font-size: 1.6rem;
+			font-size: 2rem;
 		}
 
 		&-text {
-			font-size: 1.2rem;
+			font-size: 1.6rem;
 			line-height: 150%;
 		}
 	}
@@ -128,4 +128,60 @@ body {
 .helper {
 	height: 200px;
 	background-color: rgb(108, 107, 107);
+}
+
+.hero {
+	&-bg-two {
+		height: 20em;
+		background-image: url('../../dist/img/girl_640.jpg');
+	}
+
+	&__text-two {
+		left: 50%;
+		width: 60%;
+		padding: 20px 60px;
+		text-align: center;
+		border: 1px solid #fff;
+	}
+
+	&__paragraph {
+		font-size: 2.2rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.nav {
+		&-desktop {
+			display: flex;
+		}
+
+		&-mobile {
+			display: none;
+		}
+	}
+
+	.about {
+		&-content {
+			display: flex;
+		}
+
+		&__img {
+			width: 50%;
+			margin: 20px 40px 30px 0;
+		}
+
+		&__box {
+			padding: 10px;
+
+			&-title {
+				padding: 20px 0;
+				font-size: 2.4rem;
+			}
+
+			&-text {
+				font-size: 1.8rem;
+				line-height: 200%;
+			}
+		}
+	}
 }
