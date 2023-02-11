@@ -309,6 +309,79 @@ a:visited {
 	}
 }
 
+.subpage {
+	&__text {
+		text-align: center;
+		font-size: 2rem;
+		font-weight: normal;
+	}
+}
+
+.bid {
+	&__section {
+		margin: 8em 0;
+	}
+
+	&__hero {
+		&-bg {
+			position: relative;
+			height: 25em;
+			background-position: center;
+			background-size: cover;
+
+			&--one {
+				background-image: url('../../dist/img/water-g65b69a55e_640.jpg');
+			}
+
+			&--two {
+				background-image: url('../../dist/img/forest-gb84cdaa15_640.jpg');
+			}
+
+			&--three {
+				background-image: url('../../dist/img/konigssee-gd0ec11762_640.jpg');
+			}
+		}
+
+		&-shadow {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(51, 51, 51, 0.6);
+		}
+
+		&-text {
+			position: absolute;
+			color: #fff;
+			text-align: center;
+		}
+
+		&-title {
+			font-size: 3rem;
+			margin: 0.5em;
+		}
+
+		&-paragraph {
+			margin: 0 20px;
+			text-align: center;
+			font-size: 1.4rem;
+		}
+	}
+}
+
+.details {
+	margin: 1em 0;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: fit-content;
+	font-size: 1.4rem;
+
+	&__package {
+		list-style: none;
+	}
+}
+
 @media (min-width: 576px) {
 	.offer {
 		&__cards {
@@ -335,7 +408,7 @@ a:visited {
 			position: absolute;
 			color: #fff;
 			top: 50%;
-			left: 40%;
+			left: 50%;
 			transform: translate(-50%, -50%);
 
 			&--small {
@@ -429,6 +502,39 @@ a:visited {
 		&__package {
 			font-size: 1.6rem;
 		}
+	}
+
+	.bid {
+		&__hero {
+			&-bg {
+				position: relative;
+				height: 35em;
+
+				&--one {
+					background-image: url('../../dist/img/water-g3c4ef40dc_1920.jpg');
+				}
+
+				&--two {
+					background-image: url('../../dist/img/forest-g1b496b55e_1920.jpg');
+				}
+
+				&--three {
+					background-image: url('../../dist/img/konigssee-g0481d096a_1920.jpg');
+				}
+			}
+
+			&-title {
+				font-size: 4.5rem;
+			}
+
+			&-paragraph {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	&__details {
+		font-size: 1.6rem;
 	}
 }
 
