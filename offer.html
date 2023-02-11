@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/e3bd443a68.js"
+			crossorigin="anonymous"></script>
+		<title>Forest Website</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./dist/css/style.min.css" />
+	</head>
+
+	<body>
+		<nav class="nav-mobile nav">
+	<div class="nav-mobile__logo">
+		<p class="nav__text"><i class="fa-solid fa-tree"></i> Forest</p>
+	</div>
+	<div class="nav-mobile__box">
+		<ul class="nav-mobile__links">
+			<li class="nav__link">
+				<a href="index.html" class="nav__link-navigate">Home</a>
+			</li>
+			<li class="nav__link">
+				<a href="#about" class="nav__link-navigate">O nas</a>
+			</li>
+			<li class="nav__link">
+				<a href="#offer" class="nav__link-navigate">Oferta</a>
+			</li>
+			<li class="nav__link">
+				<a href="contact.html" class="nav__link-navigate">Kontakt</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<nav class="nav-desktop nav">
+	<div class="nav-desktop__logo">
+		<p class="nav__text"><i class="fa-solid fa-tree"></i> Forest</p>
+	</div>
+	<div class="nav-desktop__box">
+		<ul class="nav-desktop__links">
+			<li class="nav__link">
+				<a href="index.html" class="nav__link-navigate">Home</a>
+			</li>
+			<li class="nav__link">
+				<a href="#about" class="nav__link-navigate">O nas</a>
+			</li>
+			<li class="nav__link">
+				<a href="#offer" class="nav__link-navigate">Oferta</a>
+			</li>
+			<li class="nav__link">
+				<a href="contact.html" class="nav__link-navigate">Kontakt</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+		<header class="hero">
+			<div class="hero-bg">
+				<div class="hero__shadow"></div>
+				<div class="hero__text">
+					<p class="hero__text--small">Forest Group</p>
+					<h1 class="hero__text--big">Najpiękniejszy park w Twojej okolicy!</h1>
+				</div>
+			</div>
+		</header>
+
+		<section class="offer" id="offer">
+			<div class="wrapper">
+				<h2 class="title">oferta</h2>
+				<h3 class="offer__text">Wybierz jedną z naszych wspaniałych ofert!</h3>
+				<div class="offer__cards">
+					<div class="offer__card card">
+						<p class="card__title">Demo</p>
+						<p class="card__price">$0</p>
+						<div class="card__list">
+							<ul class="card__package">
+								<li class="card__package-item">
+									<i class="fa-solid fa-check"></i> opcja w pakiecie
+								</li>
+								<li class="card__package-item">
+									<i class="fa-solid fa-check"></i> opcja w pakiecie
+								</li>
+								<li class="card__package-item card__package--not">
+									<i class="fa-solid fa-minus"></i> opcja poza pakietem
+								</li>
+								<li class="card__package-item card__package--not">
+									<i class="fa-solid fa-minus"></i> opcja poza pakietem
+								</li>
+								<li class="card__package-item card__package--not">
+									<i class="fa-solid fa-minus"></i> opcja poza pakietem
+								</li>
+							</ul>
+						</div>
+						<button class="card__btn">Wybierz</button>
+					</div>
+
+					<div class="offer__card card">
+						<p class="card__title">Standart</p>
+						<p class="card__price">$99</p>
+						<div class="card__list">
+							<ul class="card__package">
+								<li class="card__package-item">
+									<i class="fa-solid fa-check"></i> opcja w pakiecie
+								</li>
+								<li class="card__package-item">
+									<i class="fa-solid fa-check"></i> opcja w pakiecie
+								</li>
+								<li class="card__package-item">
+									<i class="fa-solid fa-check"></i> opcja w pakiecie
+								</li>
+								<li class="card__package-item card__package--not">
+									<i class="fa-solid fa-minus"></i> opcja poza pakietem
+								</li>
+								<li class="card__package-item card__package--not">
+									<i class="fa-solid fa-minus"></i> opcja poza pakietem
+								</li>
+							</ul>
+						</div>
+						<button class="card__btn card__btn--green">Wybierz</button>
+					</div>
+
+					<div class="offer__card card">
+						<p class="card__title">Premium</p>
+						<p class="card__price">$299</p>
+						<div class="card__list">
+							<ul class="card__package">
+								<li class="card__package-item">
+									<i class="fa-solid fa-check"></i> opcja w pakiecie
+								</li>
+								<li class="card__package-item">
+									<i class="fa-solid fa-check"></i> opcja w pakiecie
+								</li>
+								<li class="card__package-item">
+									<i class="fa-solid fa-check"></i> opcja w pakiecie
+								</li>
+								<li class="card__package-item">
+									<i class="fa-solid fa-check"></i> opcja w pakiecie
+								</li>
+								<li class="card__package-item">
+									<i class="fa-solid fa-check"></i> opcja w pakiecie
+								</li>
+							</ul>
+						</div>
+						<button class="card__btn">Wybierz</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+	<div class="footer__main">
+		<div class="footer__logo">
+			<p class="footer__logo-icon"><i class="fa-solid fa-tree"></i> Forest</p>
+		</div>
+		<div class="footer__info">
+			<div class="footer-one">
+				<h3 class="footer__info-heading">O nas</h3>
+				<p class="footer__text">Historia</p>
+				<p class="footer__text">Parki</p>
+				<p class="footer__text">Opinie</p>
+			</div>
+			<div class="footer-two">
+				<h3 class="footer__info-heading">Nasza firma</h3>
+				<p class="footer__text">Praca</p>
+				<p class="footer__text">Kadry</p>
+				<p class="footer__text">Zarząd</p>
+			</div>
+			<div class="footer-three">
+				<h3 class="footer__info-heading">Dokumenty</h3>
+				<p class="footer__text">Wnioski</p>
+				<p class="footer__text">Rezerwacje</p>
+			</div>
+		</div>
+	</div>
+	<p class="footer__copyright">&copy; 2021 Forest Group Company Ltd.</p>
+</footer>
+
+	</body>
+</html>

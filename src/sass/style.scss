@@ -229,6 +229,20 @@ a:visited {
 			background-color: rgb(104, 216, 139);
 			box-shadow: 0 0 10px rgb(104, 216, 139);
 		}
+
+		&-more {
+			padding: 15px 30px;
+			font-size: 1.8rem;
+			color: #2e2d2d;
+			text-decoration: underline;
+			border: 1px solid #3e3e3e;
+			background: none;
+			box-shadow: none;
+		}
+	}
+	&__more {
+		margin: 20px;
+		text-align: center;
 	}
 }
 
