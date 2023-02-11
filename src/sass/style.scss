@@ -368,15 +368,16 @@ a:visited {
 			font-size: 1.4rem;
 		}
 	}
+	&__details {
+		margin: 1em 0;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		width: fit-content;
+		font-size: 1.4rem;
+	}
 }
 
 .details {
-	margin: 1em 0;
-	margin-left: 50%;
-	transform: translateX(-50%);
-	width: fit-content;
-	font-size: 1.4rem;
-
 	&__package {
 		list-style: none;
 	}
@@ -531,10 +532,10 @@ a:visited {
 				font-size: 2rem;
 			}
 		}
-	}
 
-	&__details {
-		font-size: 1.6rem;
+		&__details {
+			font-size: 1.6rem;
+		}
 	}
 }
 
