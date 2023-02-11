@@ -11,6 +11,10 @@ html {
 	font-family: 'Roboto', sans-serif;
 }
 
+body {
+	scroll-behavior: smooth;
+}
+
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
@@ -33,12 +37,16 @@ html {
 
 	&__link {
 		padding: 30px 20px;
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 		list-style-type: none;
 
 		&:hover {
 			background-color: black;
 			color: #fff;
+		}
+
+		&-navigate {
+			text-decoration: none;
 		}
 	}
 
@@ -64,6 +72,11 @@ html {
 		background-color: #fff;
 		z-index: 2000;
 	}
+}
+
+a:link,
+a:visited {
+	color: inherit;
 }
 
 .hero {
@@ -290,6 +303,24 @@ html {
 
 		&-mobile {
 			display: none;
+		}
+	}
+
+	.hero {
+		&__text {
+			position: absolute;
+			color: #fff;
+			top: 50%;
+			left: 40%;
+			transform: translate(-50%, -50%);
+
+			&--small {
+				font-size: 3rem;
+			}
+
+			&--big {
+				font-size: 3.4rem;
+			}
 		}
 	}
 
