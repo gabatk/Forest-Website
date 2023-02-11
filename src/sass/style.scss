@@ -224,6 +224,11 @@ a:visited {
 		background: none;
 		box-shadow: 0 0 10px #aeadad;
 		cursor: pointer;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
 
 		&--green {
 			background-color: rgb(104, 216, 139);
@@ -243,6 +248,11 @@ a:visited {
 	&__more {
 		margin: 20px;
 		text-align: center;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 }
 
