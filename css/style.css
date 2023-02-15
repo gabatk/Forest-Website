@@ -1,0 +1,480 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.title {
+  padding: 20px;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.nav__text {
+  color: rgb(56, 56, 56);
+  font-size: 3rem;
+}
+.nav__link {
+  padding: 30px 20px;
+  font-size: 1.6rem;
+  list-style-type: none;
+}
+.nav__link:hover {
+  background-color: black;
+  color: #fff;
+}
+.nav__link-navigate {
+  text-decoration: none;
+}
+.nav-desktop {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-desktop__box {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+}
+.nav-desktop__links {
+  display: flex;
+}
+.nav-mobile {
+  position: absolute;
+  width: 60%;
+  background-color: #fff;
+  z-index: 2000;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+}
+
+.hero-bg {
+  position: relative;
+  height: 22em;
+  background-image: url("../../dist/img/jungle_640.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero__shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.5);
+}
+.hero__text {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.hero__text--small {
+  font-size: 1.6rem;
+}
+.hero__text--big {
+  font-size: 2rem;
+}
+
+.about {
+  margin: 4em 2em;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+.about__img {
+  height: 300px;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("../../dist/img/waters_640.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.about__box {
+  padding: 20px;
+}
+.about__box-title {
+  padding: 10px 0;
+  color: #000;
+  font-size: 2rem;
+}
+.about__box-text {
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+.hero-bg-two {
+  height: 20em;
+  background-image: url("../../dist/img/girl_640.jpg");
+}
+.hero__text-two {
+  left: 50%;
+  width: 60%;
+  padding: 20px 60px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.hero__paragraph {
+  font-size: 2.2rem;
+}
+
+.offer {
+  margin: 4em 2em;
+}
+.offer__text {
+  margin: 2em;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.offer__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.offer__card {
+  width: 240px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px #aeadad;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card__title {
+  font-size: 2rem;
+}
+.card__price {
+  padding: 15px;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+.card__list {
+  padding: 20px;
+}
+.card__package {
+  list-style: none;
+  text-align: left;
+  font-size: 1.4rem;
+}
+.card__package--not {
+  color: #6d6d6d;
+}
+.card__btn {
+  padding: 5px 35px;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  border: none;
+  background: none;
+  box-shadow: 0 0 10px #aeadad;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.card__btn:hover {
+  transform: scale(1.1);
+}
+.card__btn--green {
+  background-color: rgb(104, 216, 139);
+  box-shadow: 0 0 10px rgb(104, 216, 139);
+}
+.card__btn-more {
+  padding: 15px 30px;
+  font-size: 1.8rem;
+  color: #2e2d2d;
+  text-decoration: underline;
+  border: 1px solid #3e3e3e;
+  background: none;
+  box-shadow: none;
+}
+.card__more {
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.card__more:hover {
+  transform: scale(1.05);
+}
+
+.fa-check {
+  padding: 5px;
+  color: rgb(104, 216, 139);
+}
+
+.fa-minus {
+  padding: 5px;
+}
+
+.footer {
+  background-color: #f3f3f3;
+}
+.footer__main {
+  padding: 30px 0;
+  display: flex;
+}
+.footer__logo-icon {
+  margin-top: 10px;
+  color: rgb(56, 56, 56);
+  font-size: 3rem;
+  text-align: center;
+}
+.footer__logo, .footer__info {
+  width: 50%;
+}
+.footer__info {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer__info-heading {
+  padding: 5px;
+  font-size: 1.6rem;
+}
+.footer__text {
+  padding: 5px;
+  font-size: 1.4rem;
+}
+.footer__copyright {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #6d6d6d;
+}
+
+.subpage__text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.bid__section {
+  margin: 8em 0;
+}
+.bid__hero-bg {
+  position: relative;
+  height: 25em;
+  background-position: center;
+  background-size: cover;
+}
+.bid__hero-bg--one {
+  background-image: url("../../dist/img/water-g65b69a55e_640.jpg");
+}
+.bid__hero-bg--two {
+  background-image: url("../../dist/img/forest-gb84cdaa15_640.jpg");
+}
+.bid__hero-bg--three {
+  background-image: url("../../dist/img/konigssee-gd0ec11762_640.jpg");
+}
+.bid__hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.6);
+}
+.bid__hero-text {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+}
+.bid__hero-title {
+  font-size: 3rem;
+  margin: 0.5em;
+}
+.bid__hero-paragraph {
+  margin: 0 20px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.bid__details {
+  margin: 1em 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.4rem;
+}
+
+.details__package {
+  list-style: none;
+}
+
+@media (min-width: 576px) {
+  .offer__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .nav-desktop {
+    display: flex;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .hero__text {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero__text--small {
+    font-size: 3rem;
+  }
+  .hero__text--big {
+    font-size: 3.4rem;
+  }
+  .about .hero-bg {
+    background-image: url("../../dist/img/jungle_1920.jpg");
+  }
+  .about-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .about__img {
+    height: 350px;
+    width: 50%;
+    margin: 20px 40px 30px 0;
+  }
+  .about__box {
+    width: 50%;
+    padding: 10px;
+  }
+  .about__box-title {
+    padding: 20px 0;
+    font-size: 2.4rem;
+  }
+  .about__box-text {
+    font-size: 1.8rem;
+    line-height: 200%;
+  }
+  .hero .hero-bg {
+    position: relative;
+    height: 35em;
+    background-image: url("../../dist/img/jungle_1920.jpg");
+  }
+  .hero .hero-bg-two {
+    height: 30em;
+    background-image: url("../../dist/img/girl_1920.jpg");
+  }
+  .hero__text-two {
+    width: 50%;
+  }
+  .hero__paragraph {
+    font-size: 3.6rem;
+  }
+  .offer__text {
+    margin: 1em;
+    text-align: center;
+    font-size: 2.6rem;
+  }
+  .card {
+    padding: 40px 20px;
+    width: 260px;
+  }
+  .card__title {
+    font-size: 2.4rem;
+  }
+  .card__price {
+    padding: 15px;
+    font-size: 3rem;
+  }
+  .card__package {
+    font-size: 1.6rem;
+  }
+  .bid__hero-bg {
+    position: relative;
+    height: 35em;
+  }
+  .bid__hero-bg--one {
+    background-image: url("../../dist/img/water-g3c4ef40dc_1920.jpg");
+  }
+  .bid__hero-bg--two {
+    background-image: url("../../dist/img/forest-g1b496b55e_1920.jpg");
+  }
+  .bid__hero-bg--three {
+    background-image: url("../../dist/img/konigssee-g0481d096a_1920.jpg");
+  }
+  .bid__hero-title {
+    font-size: 4.5rem;
+  }
+  .bid__hero-paragraph {
+    font-size: 2rem;
+  }
+  .bid__details {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .title {
+    font-size: 3.6rem;
+  }
+  .nav-desktop {
+    display: flex;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .about .hero-bg {
+    background-image: url("../../dist/img/jungle_1920.jpg");
+  }
+  .about-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .about__img {
+    height: 350px;
+    width: 50%;
+    margin: 20px 40px 30px 0;
+  }
+  .about__box {
+    width: 50%;
+    padding: 10px;
+  }
+  .about__box-title {
+    padding: 20px 0;
+    font-size: 2.4rem;
+  }
+  .about__box-text {
+    font-size: 1.8rem;
+    line-height: 200%;
+  }
+  .hero-bg-two {
+    height: 30em;
+    background-image: url("../../dist/img/girl_1920.jpg");
+  }
+  .footer__info-heading {
+    padding: 10px;
+    font-size: 2rem;
+  }
+  .footer__text {
+    padding: 10px;
+    font-size: 1.6rem;
+  }
+  .footer__copyright {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=style.css.map */
