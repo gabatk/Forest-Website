@@ -382,6 +382,39 @@ a:visited {
 		list-style: none;
 	}
 }
+
+.contact-form {
+	&__text {
+		margin: 5em 2em 3em 2em;
+		font-size: 1.8rem;
+		text-align: center;
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__label {
+		font-size: 1.6rem;
+		font-weight: bold;
+		padding: 1em;
+	}
+
+	&__input {
+		padding: 0.5em 2em;
+		margin-bottom: 2em;
+	}
+
+	&__msg {
+		width: 80%;
+		max-width: 80%;
+		height: 200px;
+	}
+}
+
 .maps {
 	height: 300px;
 	text-align: center;
@@ -621,6 +654,12 @@ a:visited {
 
 		&__copyright {
 			font-size: 1.4rem;
+		}
+	}
+	.form {
+		&__msg {
+			width: 800px;
+			max-width: 800px;
 		}
 	}
 }
