@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="./dist/css/style.min.css" />
 	</head>
 
-	<body>
+	<body class="contact-body">
 		@include 'nav.kit'
 
 		<header class="contact">
@@ -32,19 +32,25 @@
 				szybko, jak tylko będzie to możliwe.
 			</p>
 			<div class="form">
-				<label for="name" class="form__label">Podaj swoje imię:</label>
+				<label for="name" class="form__label"
+					><i class="fa-solid fa-user"></i> Podaj swoje imię:</label
+				>
 				<input
 					type="text"
 					id="name"
 					placeholder="Podaj swoje imię"
 					class="form__input" />
-				<label for="email" class="form__label">Wpisz swój adres mailowy:</label>
+				<label for="email" class="form__label"
+					><i class="fa-solid fa-at"></i> Wpisz swój adres mailowy:</label
+				>
 				<input
 					type="text"
 					id="email"
 					placeholder="Wpisz swój adres mailowy"
 					class="form__input" />
-				<label for="msg" class="form__label">Wpisz swoją wiadomość:</label>
+				<label for="msg" class="form__label"
+					><i class="fa-solid fa-envelope"></i> Wpisz swoją wiadomość:</label
+				>
 				<textarea
 					id="msg"
 					placeholder="Wpisz swoją wiadomość"

@@ -15,6 +15,12 @@ body {
 	scroll-behavior: smooth;
 }
 
+.contact-body {
+	background-image: url('../../dist/img/mountains-g6f9ff6da3_1920.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
@@ -311,6 +317,7 @@ a:visited {
 
 .subpage {
 	&__text {
+		margin-bottom: 3em;
 		text-align: center;
 		font-size: 2rem;
 		font-weight: normal;
@@ -383,11 +390,13 @@ a:visited {
 	}
 }
 
-.contact-form {
-	&__text {
-		margin: 5em 2em 3em 2em;
-		font-size: 1.8rem;
-		text-align: center;
+.contact {
+	&-form {
+		&__text {
+			margin: 2em 2em 3em 2em;
+			font-size: 1.6rem;
+			text-align: center;
+		}
 	}
 }
 
@@ -398,14 +407,18 @@ a:visited {
 	align-items: center;
 
 	&__label {
-		font-size: 1.6rem;
+		font-size: 2rem;
 		font-weight: bold;
 		padding: 1em;
+		color: #000;
 	}
 
 	&__input {
 		padding: 0.5em 2em;
 		margin-bottom: 2em;
+		background-color: rgba(243, 243, 243, 0.7);
+		border: 1px solid #706f6f;
+		border-radius: 5px;
 	}
 
 	&__msg {
@@ -418,7 +431,7 @@ a:visited {
 .maps {
 	height: 300px;
 	text-align: center;
-	margin: 6em 1em;
+	margin: 8em 1em;
 }
 
 @media (min-width: 576px) {
@@ -579,7 +592,7 @@ a:visited {
 	.maps {
 		width: 60%;
 		max-width: 700px;
-		margin: 6em auto;
+		margin: 8em auto;
 	}
 }
 
