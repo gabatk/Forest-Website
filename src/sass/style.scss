@@ -382,10 +382,10 @@ a:visited {
 		list-style: none;
 	}
 }
-
 .maps {
+	height: 300px;
 	text-align: center;
-	margin: 6em 0;
+	margin: 6em 1em;
 }
 
 @media (min-width: 576px) {
@@ -541,6 +541,12 @@ a:visited {
 		&__details {
 			font-size: 1.6rem;
 		}
+	}
+
+	.maps {
+		width: 60%;
+		max-width: 700px;
+		margin: 6em auto;
 	}
 }
 
