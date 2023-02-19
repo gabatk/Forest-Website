@@ -17,7 +17,9 @@
 	</head>
 
 	<body class="contact-body">
-		<nav class="nav-mobile nav">
+		<header class="navigation">
+			<div class="nav-mobile__icon nav-contact__icon"><i class="fa-solid fa-bars"></i></div>
+			<nav class="nav-mobile nav">
 	<div class="nav-mobile__logo">
 		<p class="nav__text"><i class="fa-solid fa-tree"></i> Forest</p>
 	</div>
@@ -61,60 +63,63 @@
 	</div>
 </nav>
 
-
-		<header class="contact">
-			<h2 class="title contact__title">Kontakt</h2>
-			<h3 class="contact__text subpage__text">
-				Jesteś zainteresowany naszą ofertą? Skontaktuj się z nami!
-			</h3>
 		</header>
 
-		<section class="contact-form">
-			<p class="contact-form__text">
-				Możesz się z nami skontaktować przez formularz kontaktowy. Odpowiemy tak
-				szybko, jak tylko będzie to możliwe.
-			</p>
-			<div class="form">
-				<label for="name" class="form__label"
-					><i class="fa-solid fa-user"></i> Podaj swoje imię:</label
-				>
-				<input
-					type="text"
-					id="name"
-					placeholder="Podaj swoje imię"
-					class="form__input" />
-				<label for="email" class="form__label"
-					><i class="fa-solid fa-at"></i> Wpisz swój adres mailowy:</label
-				>
-				<input
-					type="text"
-					id="email"
-					placeholder="Wpisz swój adres mailowy"
-					class="form__input" />
-				<label for="msg" class="form__label"
-					><i class="fa-solid fa-envelope"></i> Wpisz swoją wiadomość:</label
-				>
-				<textarea
-					id="msg"
-					placeholder="Wpisz swoją wiadomość"
-					class="form__input form__msg"></textarea>
-			</div>
-		</section>
+		<div class="content">
+			<section class="contact">
+				<h2 class="title contact__title">Kontakt</h2>
+				<h3 class="contact__text subpage__text">
+					Jesteś zainteresowany naszą ofertą? Skontaktuj się z nami!
+				</h3>
+			</section>
 
-		<section class="contact-box">
-			<div class="p"></div>
-			<div class="maps">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10239.593805595492!2d19.8928489!3d50.0881881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1676491174617!5m2!1spl!2spl"
-					width="100%"
-					height="100%"
-					style="border: 0"
-					allowfullscreen=""
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"
-					class="maps-item"></iframe>
-			</div>
-		</section>
+			<section class="contact-form">
+				<p class="contact-form__text">
+					Możesz się z nami skontaktować przez formularz kontaktowy. Odpowiemy
+					tak szybko, jak tylko będzie to możliwe.
+				</p>
+				<div class="form">
+					<label for="name" class="form__label"
+						><i class="fa-solid fa-user"></i> Podaj swoje imię:</label
+					>
+					<input
+						type="text"
+						id="name"
+						placeholder="Podaj swoje imię"
+						class="form__input" />
+					<label for="email" class="form__label"
+						><i class="fa-solid fa-at"></i> Wpisz swój adres mailowy:</label
+					>
+					<input
+						type="text"
+						id="email"
+						placeholder="Wpisz swój adres mailowy"
+						class="form__input" />
+					<label for="msg" class="form__label"
+						><i class="fa-solid fa-envelope"></i> Wpisz swoją wiadomość:</label
+					>
+					<textarea
+						id="msg"
+						placeholder="Wpisz swoją wiadomość"
+						class="form__input form__msg"></textarea>
+				</div>
+			</section>
+
+			<section class="contact-box">
+				<div class="p"></div>
+				<div class="maps">
+					<!-- <iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10239.593805595492!2d19.8928489!3d50.0881881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1676491174617!5m2!1spl!2spl"
+						width="100%"
+						height="100%"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						class="maps-item"></iframe> -->
+				</div>
+			</section>
+		</div>
 
 		<footer class="footer">
 	<div class="footer__main">
@@ -144,5 +149,7 @@
 	<p class="footer__copyright">&copy; 2021 Forest Group Company Ltd.</p>
 </footer>
 
+		<script src="../dist/js/main.min.js"></script>
 	</body>
+
 </html>
