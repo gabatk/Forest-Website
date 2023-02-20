@@ -25,7 +25,7 @@ html {
 }
 
 .title {
-	padding: 20px;
+	margin: 20px 50px;
 	text-align: center;
 	font-size: 2.4rem;
 	font-weight: 200;
@@ -463,10 +463,6 @@ a:visited {
 		&-desktop {
 			display: flex;
 		}
-
-		// &-mobile {
-		// 	display: none;
-		// }
 	}
 
 	.hero {
@@ -618,10 +614,6 @@ a:visited {
 	.nav {
 		&-desktop {
 			display: flex;
-		}
-
-		&-mobile {
-			display: none;
 		}
 	}
 

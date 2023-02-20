@@ -1,4 +1,4 @@
-const burgerBtn = document.querySelector('.nav-mobile__icon');
+const burgerBtn = document.querySelectorAll('.nav-mobile__icon');
 const navMobile = document.querySelector('.nav-mobile');
 const navLinks = document.querySelectorAll('.nav-mobile__link');
 const contentPart = document.querySelector('.content');
@@ -18,5 +18,11 @@ const hideMobileNav = () => {
 	navMobile.style.display = 'none';
 };
 
-burgerBtn.addEventListener('click', handleMobileNav);
+const handleBtns = () => {
+	burgerBtn.forEach(btn => {
+		btn.addEventListener('click', handleMobileNav);
+	});
+};
+
+handleBtns()
 contentPart.addEventListener('click', hideMobileNav);
