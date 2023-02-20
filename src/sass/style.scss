@@ -463,6 +463,10 @@ a:visited {
 		&-desktop {
 			display: flex;
 		}
+
+		&-mobile__icon {
+			display: none;
+		}
 	}
 
 	.hero {
@@ -609,12 +613,6 @@ a:visited {
 @media (min-width: 992px) {
 	.title {
 		font-size: 3.6rem;
-	}
-
-	.nav {
-		&-desktop {
-			display: flex;
-		}
 	}
 
 	.about {
